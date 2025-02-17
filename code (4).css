@@ -1,0 +1,68 @@
+/* shiva_animation.css */
+
+/* Apply background to the body */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  animation: backgroundColorChange 10s infinite alternate; /* Apply background color animation */
+  background-image: url("https://raw.githubusercontent.com/mrvampire-cybr/WISH/6235501ad779f4c9d65c24638f4628878c9e4da6/WhatsApp%20Image%202025-02-17%20at%204.19.54%20PM.jpeg"); /*  Background Img URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes backgroundColorChange {
+  0% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Style for a top section with an image */
+.top-section {
+  background-image: url("https://download151.mediafire.com/rrc5pzzgrmdg/cbevadcxqmnvahr/WhatsApp_Image_2025-02-17_at_2.47.58_PM.jpeg"); /* Your top image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px; /* Adjust the height as needed */
+  width: 100%;
+  margin-bottom: 20px; /* Add space below the top section */
+}
+
+.shiva-icon {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  background-image: url("YOUR_SHIVA_ICON_IMAGE_URL.png"); /* Replace with your image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px auto; /* Center the icon */
+  animation: rotateShiva 5s linear infinite; /* Animation properties */
+}
+
+@keyframes rotateShiva {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50%{
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Add some styles for a pulsating glow effect */
+.shiva-icon.glowing {
+  box-shadow: 0 0 10px #888; /* Initial glow */
+  animation: pulsate 2s infinite alternate; /* Add pulsate animation */
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 10px #888;
+  }
+  100% {
+    box-shadow: 0 0 30px #ddd; /* Stronger glow */
+  }
+}
