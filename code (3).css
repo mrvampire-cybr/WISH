@@ -66,3 +66,25 @@ body {
     box-shadow: 0 0 30px #ddd; /* Stronger glow */
   }
 }
+/* Style for blinking WhatsApp share box */
+.whatsapp-share-box {
+  background-color: #d4edda; /* Light green background */
+  border: 2px solid #c3e6cb; /* Slightly darker green border */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  animation: blink 1.5s linear infinite; /* Add blink animation */
+  display: inline-block; /* Make the box fit the content */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
