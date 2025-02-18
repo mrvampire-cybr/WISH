@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #f0f0f0;
   animation: backgroundColorChange 10s infinite alternate; /* Apply background color animation */
-  background-image: url("https://raw.githubusercontent.com/mrvampire-cybr/WISH/6235501ad779f4c9d65c24638f4628878c9e4da6/WhatsApp%20Image%202025-02-17%20at%204.19.54%20PM.jpeg"); /*  Background Img URL */
+  background-image: url("https://github.com/mrvampire-cybr/WISH/blob/9f41705859c2192f225292cf38c77b58b0e460b6/WhatsApp%20Image%202025-02-17%20at%204.19.54%20PM.jpeg"); /*  Background Img URL */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@ body {
 
 /* Style for a top section with an image */
 .top-section {
-  background-image: url("https://download151.mediafire.com/rrc5pzzgrmdg/cbevadcxqmnvahr/WhatsApp_Image_2025-02-17_at_2.47.58_PM.jpeg"); /* Your top image */
+  background-image: url("https://github.com/mrvampire-cybr/WISH/blob/9f41705859c2192f225292cf38c77b58b0e460b6/WhatsApp%20Image%202025-02-17%20at%204.19.54%20PM.jpeg"); /* Your top image */
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px; /* Adjust the height as needed */
@@ -33,7 +33,7 @@ body {
 .shiva-icon {
   width: 100px; /* Adjust size as needed */
   height: 100px;
-  background-image: url("YOUR_SHIVA_ICON_IMAGE_URL.png"); /* Replace with your image */
+  background-image: url("https://github.com/mrvampire-cybr/WISH/blob/9f41705859c2192f225292cf38c77b58b0e460b6/WhatsApp%20Image%202025-02-17%20at%204.19.54%20PM.jpeg"); /* Replace with your image */
   background-size: contain;
   background-repeat: no-repeat;
   margin: 20px auto; /* Center the icon */
