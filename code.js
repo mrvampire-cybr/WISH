@@ -55,3 +55,39 @@ document.addEventListener("DOMContentLoaded", function() {
         window.open(shareURL, '_blank');
     });
 });
+
+$(document).ready(function() {
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function animateMarquee(marquee) {
+        var duration = 5000; // Adjust for speed
+        var easing = 'easeInOutSine'; // Easing function
+
+        $(marquee).animate({
+            left: '-100%'
+        }, {
+            duration: duration,
+            easing: easing,
+            complete: function() {
+                $(this).css('left', '100%'); // Reset position to start from right
+                animateMarquee(this); // Repeat
+            },
+            step: function() {
+                $(this).css('color', getRandomColor()); // Change color
+            }
+        });
+    }
+
+    // Find all marquee elements and initiate animation
+    $('marquee').each(function() {
+        $(this).css('left', '100%'); // Start off screen
+        animateMarquee(this);
+    });
+});
